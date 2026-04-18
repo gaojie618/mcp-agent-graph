@@ -21,3 +21,5 @@ experimental/
 .claude
 
 spec/
+
+agent-workspace/
