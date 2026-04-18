@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "MCP Agent Graph",
+    "appName": "Agent-Graph",
     "welcome": "欢迎",
     "save": "保存",
     "cancel": "取消",
@@ -38,7 +38,7 @@
     },
     "register": {
       "title": "创建账号",
-      "subtitle": "加入 MCP Agent Graph",
+      "subtitle": "加入 Agent-Graph",
       "inviteCode": "邀请码",
       "inviteCodePlaceholder": "请输入邀请码（如：TEAM-ABC123）",
       "inviteCodeHint": "请联系管理员获取邀请码",

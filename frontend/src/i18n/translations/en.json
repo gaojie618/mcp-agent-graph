@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "MCP Agent Graph",
+    "appName": "Agent-Graph",
     "welcome": "Welcome",
     "save": "Save",
     "cancel": "Cancel",
@@ -38,7 +38,7 @@
     },
     "register": {
       "title": "Create Account",
-      "subtitle": "Join MCP Agent Graph",
+      "subtitle": "Join Agent-Graph",
       "inviteCode": "Invite Code",
       "inviteCodePlaceholder": "Please enter invite code (e.g., TEAM-ABC123)",
       "inviteCodeHint": "Please contact administrator for invite code",

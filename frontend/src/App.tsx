@@ -38,7 +38,7 @@ const AppContent: React.FC = () => {
 
   useEffect(() => {
     // 设置页面标题
-    document.title = "MCP Agent Graph";
+    document.title = "Agent-Graph";
   }, []);
 
   return (
