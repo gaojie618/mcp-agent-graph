@@ -123,7 +123,7 @@
         },
         {
           "role": "assistant",
-          "content": "Alright!\n\nThrough this demonstration conversation, you have learned about the core features of Agent-Graph. You can delete this conversation at any time.\n\nNext, we invite you to start experiencing this system yourself (don't forget to add your real model API KEY!). For more information, please visit the project address https://github.com/keta1930/mcp-agent-graph and the online documentation https://keta1930.github.io/mcp-agent-graph/\n\nEnjoy!"
+          "content": "Alright!\n\nThrough this demonstration conversation, you have learned about the core features of Agent-Graph. You can delete this conversation at any time.\n\nNext, we invite you to start experiencing this system yourself (don't forget to add your real model API KEY!). For more information, please visit the project address https://github.com/keta1930/agent-graph and the online documentation https://keta1930.github.io/agent-graph/\n\nEnjoy!"
         }
       ]
     }

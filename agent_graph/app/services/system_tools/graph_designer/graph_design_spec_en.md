@@ -1,8 +1,8 @@
-# MAG (MCP Agent Graph) Graph Design Specification
+# Agent-Graph Graph Design Specification
 
 ## Overview
 
-MAG is a powerful multi-agent workflow system that builds complex agent collaboration processes through Nodes and Connections. Each node represents a specialized agent, and the connections between nodes determine the information flow and execution order.
+Agent-Graph is a powerful multi-agent workflow system that builds complex agent collaboration processes through Nodes and Connections. Each node represents a specialized agent, and the connections between nodes determine the information flow and execution order.
 
 This document is divided into three major parts:
 1. **Basic Parameters and Descriptions** - Ensure Agent generates correct Graph configurations
@@ -126,7 +126,7 @@ In `system_prompt`, `user_prompt`, and `end_template`, you can use placeholders 
 
 ## 1.4 System Tools Description
 
-System tools are built-in functional modules of MAG, configured through the `system_tools` parameter. **Important**: Use **tool names** (not class names) when configuring.
+System tools are built-in functional modules of Agent-Graph, configured through the `system_tools` parameter. **Important**: Use **tool names** (not class names) when configuring.
 
 ### File Operations Tools (file_creator)
 
@@ -1481,7 +1481,7 @@ start → Technical Research → Code Examples ↘
 - **Agent**: Registered reusable agent configuration
 - **Handoffs**: Mechanism for dynamically selecting next execution node
 - **MCP Server**: Model Context Protocol service, provides external tools
-- **System Tools**: Built-in functional tools in MAG
+- **System Tools**: Built-in functional tools in Agent-Graph
 - **Subagent**: Other specialized Agents called within a node
 - **Placeholder**: Syntax for referencing node outputs or prompt templates
 - **Conversation**: Graph execution instance, includes all node execution history
@@ -1537,4 +1537,4 @@ Before creating Graph, use this checklist to check design quality:
 
 ---
 
-**The goal of this specification is to help Agents design high-quality, maintainable, and efficient Graphs. By following this specification, Agents can fully utilize MAG's powerful capabilities to build complex multi-agent collaboration systems.**
+**The goal of this specification is to help Agents design high-quality, maintainable, and efficient Graphs. By following this specification, Agents can fully utilize Agent-Graph's powerful capabilities to build complex multi-agent collaboration systems.**
