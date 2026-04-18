@@ -17,8 +17,8 @@ Before installation, ensure your system meets these requirements:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/keta1930/mcp-agent-graph.git
-cd mcp-agent-graph
+git clone https://github.com/keta1930/agent-graph.git
+cd agent-graph
 ```
 
 ### 2. Configure Docker Services
@@ -26,7 +26,7 @@ cd mcp-agent-graph
 Docker services provide MongoDB database and MinIO object storage.
 
 ```bash
-cd docker/mag_services
+cd docker/agent_graph_services
 cp .env.example .env
 ```
 
@@ -46,7 +46,7 @@ Edit the `.env` file with your configuration:
 | ADMIN_USERNAME | Super admin username | admin |
 | ADMIN_PASSWORD | Super admin password | securepassword |
 
-**Generate JWT Secret Key:** Run `python mag/scripts/generate_jwt_secret.py` to generate a secure JWT secret key.
+**Generate JWT Secret Key:** Run `python agent_graph/scripts/generate_jwt_secret.py` to generate a secure JWT secret key.
 
 ### 3. Start Docker Services
 
@@ -70,7 +70,7 @@ cd ../..  # Return to project root
 uv sync
 
 # Start backend service
-cd mag
+cd agent_graph
 uv run python main.py
 ```
 
@@ -81,7 +81,7 @@ cd ../..  # Return to project root
 pip install -r requirements.txt
 
 # Start backend service
-cd mag
+cd agent_graph
 python main.py
 ```
 
@@ -128,7 +128,7 @@ After installation, verify all services are running correctly:
 | Docker services fail to start | Check ports are not already in use, verify Docker is running |
 | Backend connection error | Verify MongoDB and MinIO are running, check `.env` configuration |
 | Cannot login | Verify admin credentials in `.env` file match login attempt |
-| Port 9999 already in use | Change the port in `mag/main.py` (default: 9999) |
+| Port 9999 already in use | Change the port in `agent_graph/main.py` (default: 9999) |
 
 ## For Developers
 

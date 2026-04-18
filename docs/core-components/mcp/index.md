@@ -13,7 +13,7 @@ Instead of writing custom integrations for each tool, MCP allows you to connect 
 | **Server** | Provides tools and data | GitHub server provides repository operations |
 | **Tools** | Actions the agent can execute | Search files, create issues, commit code |
 | **Resources** | Data the agent can read | File contents, API responses, database records |
-| **Client** | Connects servers to agents | Built into the MAG platform |
+| **Client** | Connects servers to agents | Built into the Agent-Graph platform |
 
 ## Why Use MCP
 

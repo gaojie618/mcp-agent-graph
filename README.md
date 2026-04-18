@@ -4,11 +4,11 @@ English | [中文](README_CN.md)
 >
 > ⚠️ **项目状态**：本项目目前处于暂停更新状态，不会再更新新功能。在线体验服务已下线。
 
-MCP Agent Graph is a Multi-Agent System built on the principles of Context Engineering. It integrates Sub-agent, Long-term Memory, MCP, Agent-based Workflow, and other capabilities. By integrating Context Engineering best practices into a visual development experience, MCP Agent Graph enables developers to rapidly build, test, and deploy complex multi-agent applications.
+Agent-Graph is a Multi-Agent System built on the principles of Context Engineering. It integrates Sub-agent, Long-term Memory, MCP, Agent-based Workflow, and other capabilities. By integrating Context Engineering best practices into a visual development experience, Agent-Graph enables developers to rapidly build, test, and deploy complex multi-agent applications.
 
 | | |
 |---|---|
-| **Documentation** | **https://keta1930.github.io/mcp-agent-graph/** |
+| **Documentation** | **https://keta1930.github.io/agent-graph/** |
 
 ## Table of Contents
 
@@ -54,14 +54,14 @@ MCP Agent Graph is a Multi-Agent System built on the principles of Context Engin
 
 #### 2.1. Clone Project
 ```bash
-git clone https://github.com/keta1930/mcp-agent-graph.git
-cd mcp-agent-graph
+git clone https://github.com/keta1930/agent-graph.git
+cd agent-graph
 ```
 
 #### 2.2. Configure and Start Docker Services
 
 ```bash
-cd docker/mag_services
+cd docker/agent_graph_services
 cp .env.example .env
 # Edit .env file to configure necessary parameters (see installation documentation)
 docker-compose up -d
@@ -77,7 +77,7 @@ docker-compose up -d
 ```bash
 cd ../..  # Return to project root
 uv sync
-cd mag
+cd agent_graph
 uv run python main.py
 ```
 
@@ -85,7 +85,7 @@ uv run python main.py
 ```bash
 cd ../..  # Return to project root
 pip install -r requirements.txt
-cd mag
+cd agent_graph
 python main.py
 ```
 
@@ -151,7 +151,6 @@ npm run build  # Build production version
 |---------|-------------|---------------|
 | **MCP Protocol Integration** | Connect external tools and data sources (databases, APIs, file systems, cloud services, etc.) through standardized protocol, connect once and use everywhere | [MCP Docs](docs/core-components/mcp/index.md) |
 | **Built-in Tool Set** | Provides resource creation (Agent Creator, Graph Designer, MCP Builder, Prompt Generator, Task Manager), collaboration (Sub-agent, File Tool), and query (Memory Tool, System Operations) system tools | [Tools Docs](docs/core-components/tools/index.md) |
-| **Python SDK** | [Discontinued] Install via `pip install mcp-agent-graph`, build and manage Agent systems using Python code | [PyPI Package](https://pypi.org/project/mcp-agent-graph/) |
 
 ### Collaboration & Management
 
@@ -260,13 +259,13 @@ View and manage Agent's long-term memory and knowledge base.
 
 ## 6. Citation
 
-If you find MCP Agent Graph helpful for your research or work, please consider citing it:
+If you find Agent-Graph helpful for your research or work, please consider citing it:
 
 ```bibtex
-@misc{mcp_agent_graph_2025,
-  title        = {mcp-agent-graph},
+@misc{agent_graph_2025,
+  title        = {agent-graph},
   author       = {Yan Yixin},
-  howpublished = {\url{https://github.com/keta1930/mcp-agent-graph}},
+  howpublished = {\url{https://github.com/keta1930/agent-graph}},
   note         = {Accessed: 2025-04-24},
   year         = {2025}
 }

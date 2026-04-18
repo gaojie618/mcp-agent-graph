@@ -1,6 +1,6 @@
-# 欢迎使用 MAG
+# 欢迎使用 Agent-Graph
 
-MAG（多智能体图）是一个集成平台，用于构建、编排和管理 AI 智能体系统，提供可视化工作流设计、完整工具体系和团队协作能力。
+Agent-Graph 是一个集成平台，用于构建、编排和管理 AI 智能体系统，提供可视化工作流设计、完整工具体系和团队协作能力。
 
 ## 系统框架
 
@@ -12,9 +12,9 @@ MAG（多智能体图）是一个集成平台，用于构建、编排和管理 A
 
 ## 快速开始
 
-三步开始使用 MAG：
+三步开始使用 Agent-Graph：
 
-1. **[安装 MAG](first-steps/install.md)** - 在您的系统上部署平台
+1. **[安装 Agent-Graph](first-steps/install.md)** - 在您的系统上部署平台
 2. **[创建第一个智能体](core-components/agent/first-agent.md)** - 几分钟内构建一个简单智能体
 3. **[设计工作流](core-components/graph/first-graph.md)** - 将多个智能体连接成工作流
 

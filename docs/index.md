@@ -1,6 +1,6 @@
-# Welcome to MAG
+# Welcome to Agent-Graph
 
-MAG (Multi-Agent Graph) is an integrated platform for building, orchestrating, and managing AI agent systems with visual workflow design, comprehensive tooling, and team collaboration capabilities.
+Agent-Graph is an integrated platform for building, orchestrating, and managing AI agent systems with visual workflow design, comprehensive tooling, and team collaboration capabilities.
 
 ## System Framework
 
@@ -12,9 +12,9 @@ MAG (Multi-Agent Graph) is an integrated platform for building, orchestrating, a
 
 ## Quick Start
 
-Get started with MAG in three steps:
+Get started with Agent-Graph in three steps:
 
-1. **[Install MAG](first-steps/install.md)** - Set up the platform on your system
+1. **[Install Agent-Graph](first-steps/install.md)** - Set up the platform on your system
 2. **[Create Your First Agent](core-components/agent/first-agent.md)** - Build a simple agent in minutes
 3. **[Design a Workflow](core-components/graph/first-graph.md)** - Connect multiple agents into a workflow
 

@@ -1,6 +1,6 @@
-# MAG Documentation
+# Agent-Graph Documentation
 
-This directory contains the documentation for the Multi-Agent Graph (MAG) platform.
+This directory contains the documentation for the Agent-Graph platform.
 
 ## Documentation Structure
 

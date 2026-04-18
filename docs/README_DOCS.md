@@ -1,6 +1,6 @@
-# MAG Documentation
+# Agent-Graph Documentation
 
-Welcome to the MAG (Multi-Agent Graph) documentation source files.
+Welcome to the Agent-Graph documentation source files.
 
 ## Quick Start
 

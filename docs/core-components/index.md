@@ -1,10 +1,10 @@
 # Core Components
 
-Explore the fundamental building blocks of the MAG platform.
+Explore the fundamental building blocks of the Agent-Graph platform.
 
 ## Overview
 
-MAG is built on several core components that work together to provide a comprehensive multi-agent platform:
+Agent-Graph is built on several core components that work together to provide a comprehensive multi-agent platform:
 
 - **Agent**: Autonomous units that execute tasks
 - **Graph (Workflow)**: Orchestration layer for multi-agent coordination
@@ -19,7 +19,7 @@ MAG is built on several core components that work together to provide a comprehe
 ## Component Overview
 
 ### Agents
-Agents are the core execution units in MAG. They can use tools, maintain memory, and collaborate with other agents to accomplish complex tasks.
+Agents are the core execution units in Agent-Graph. They can use tools, maintain memory, and collaborate with other agents to accomplish complex tasks.
 
 [Learn more about Agents →](agent/index.md)
 
@@ -29,12 +29,12 @@ Graphs provide visual workflow orchestration, allowing you to design and execute
 [Learn more about Graphs →](graph/index.md)
 
 ### Models
-MAG supports various LLM models. Configure and manage your AI models through the model management system.
+Agent-Graph supports various LLM models. Configure and manage your AI models through the model management system.
 
 [Learn more about Models →](model/index.md)
 
 ### Memory
-MAG provides both short-term and long-term memory systems for agents and users.
+Agent-Graph provides both short-term and long-term memory systems for agents and users.
 
 [Learn more about Memory →](memory/index.md)
 
@@ -44,7 +44,7 @@ Integrate Model Context Protocol servers to extend agent capabilities with exter
 [Learn more about MCP →](mcp/index.md)
 
 ### Built-in Tools
-MAG comes with a rich set of built-in tools for file operations, agent creation, graph design, and more.
+Agent-Graph comes with a rich set of built-in tools for file operations, agent creation, graph design, and more.
 
 [Learn more about Built-in Tools →](tools/index.md)
 

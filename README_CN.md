@@ -2,11 +2,11 @@
 
 > ⚠️ **项目状态**：本项目目前处于暂停更新状态，不会再更新新功能。在线体验服务已下线。
 
-MCP Agent Graph 是一个基于上下文工程（Context Engineering）理念构建的多智能体系统（Multi-Agent System）。集成了 Sub-agent、长期记忆、MCP、Agent-based Workflow 等功能。通过将上下文工程的最佳实践融入可视化的开发体验，MCP Agent Graph 让开发者能够快速构建、测试和部署复杂的多智能体应用。
+Agent-Graph 是一个基于上下文工程（Context Engineering）理念构建的多智能体系统（Multi-Agent System）。集成了 Sub-agent、长期记忆、MCP、Agent-based Workflow 等功能。通过将上下文工程的最佳实践融入可视化的开发体验，Agent-Graph 让开发者能够快速构建、测试和部署复杂的多智能体应用。
 
 | | |
 |---|---|
-| **文档** | **https://keta1930.github.io/mcp-agent-graph/** |
+| **文档** | **https://keta1930.github.io/agent-graph/** |
 
 ## 目录
 
@@ -52,14 +52,14 @@ MCP Agent Graph 是一个基于上下文工程（Context Engineering）理念构
 
 #### 2.1. 克隆项目
 ```bash
-git clone https://github.com/keta1930/mcp-agent-graph.git
-cd mcp-agent-graph
+git clone https://github.com/keta1930/agent-graph.git
+cd agent-graph
 ```
 
 #### 2.2. 配置并启动 Docker 服务
 
 ```bash
-cd docker/mag_services
+cd docker/agent_graph_services
 cp .env.example .env
 # 编辑 .env 文件配置必要参数（详见安装文档）
 docker-compose up -d
@@ -75,7 +75,7 @@ docker-compose up -d
 ```bash
 cd ../..  # 返回项目根目录
 uv sync
-cd mag
+cd agent_graph
 uv run python main.py
 ```
 
@@ -83,7 +83,7 @@ uv run python main.py
 ```bash
 cd ../..  # 返回项目根目录
 pip install -r requirements.txt
-cd mag
+cd agent_graph
 python main.py
 ```
 
@@ -149,7 +149,6 @@ npm run build  # 构建生产版本
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------|---------|
 | **MCP 协议集成** | 通过标准化协议连接外部工具和数据源（数据库、API、文件系统、云服务等），一次连接即可使用                                                                                                 | [MCP 文档](docs/core-components/mcp/index.zh.md) |
 | **内置工具集** | 提供资源创建（Agent Creator、Graph Designer、MCP Builder、Prompt Generator、Task Manager）、协作（Sub-agent、File Tool）和查询（Memory Tool、System Operations）等系统工具 | [Tools 文档](docs/core-components/tools/index.zh.md) |
-| **Python SDK** | [已停止支持] 通过 `pip install mcp-agent-graph` 安装，使用 Python 代码构建和管理 Agent 系统                                                                         | [PyPI 包](https://pypi.org/project/mcp-agent-graph/) |
 
 ### 协作与管理
 
@@ -258,13 +257,13 @@ npm run build  # 构建生产版本
 
 ## 6. 引用
 
-如果您发现 MCP Agent Graph 对您的研究或工作有帮助,请考虑引用它:
+如果您发现 Agent-Graph 对您的研究或工作有帮助,请考虑引用它:
 
 ```bibtex
-@misc{mcp_agent_graph_2025,
-  title        = {mcp-agent-graph},
+@misc{agent_graph_2025,
+  title        = {agent-graph},
   author       = {Yan Yixin},
-  howpublished = {\url{https://github.com/keta1930/mcp-agent-graph}},
+  howpublished = {\url{https://github.com/keta1930/agent-graph}},
   note         = {Accessed: 2025-04-24},
   year         = {2025}
 }

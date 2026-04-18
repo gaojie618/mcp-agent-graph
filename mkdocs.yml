@@ -1,10 +1,10 @@
 site_name: Agent-Graph Documentation
-site_url: https://keta1930.github.io/mcp-agent-graph/
+site_url: https://keta1930.github.io/agent-graph/
 site_description: Building Your AI Agents with Agent-Graph
 site_author: Agent-Graph Team
 
-repo_name: mcp-agent-graph
-repo_url: https://github.com/keta1930/mcp-agent-graph
+repo_name: agent-graph
+repo_url: https://github.com/keta1930/agent-graph
 edit_uri: edit/master/docs/
 
 # Copyright
@@ -194,10 +194,10 @@ markdown_extensions:
 extra:
   alternate:
     - name: English
-      link: /mcp-agent-graph/
+      link: /agent-graph/
       lang: en
     - name: 中文
-      link: /mcp-agent-graph/zh/
+      link: /agent-graph/zh/
       lang: zh
 
   version:
@@ -206,7 +206,7 @@ extra:
 
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/keta1930/mcp-agent-graph
+      link: https://github.com/keta1930/agent-graph
       name: GitHub Repository
 
 # Extra CSS and JavaScript

@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-The following versions of MCP-Agent-Graph are currently supported with security updates:
+The following versions of Agent-Graph are currently supported with security updates:
 
 | Version   | Supported          |
 | --------- | ------------------ |
@@ -11,7 +11,7 @@ The following versions of MCP-Agent-Graph are currently supported with security 
 
 ## Reporting a Vulnerability
 
-We take the security of MCP-Agent-Graph seriously. If you believe you've found a security vulnerability, please follow these steps:
+We take the security of Agent-Graph seriously. If you believe you've found a security vulnerability, please follow these steps:
 
 1. **Do not disclose the vulnerability publicly** - Please don't create a GitHub issue for security vulnerabilities.
 
@@ -33,11 +33,11 @@ We take the security of MCP-Agent-Graph seriously. If you believe you've found a
 
 ## Security Best Practices
 
-When using MCP-Agent-Graph in your environment:
+When using Agent-Graph in your environment:
 
 1. Keep the software updated to the latest supported version.
 2. Use secure API keys and credentials, never hardcoding them in your configuration.
 3. Run the application with minimal required permissions.
 4. Regularly audit your configuration files and deployment.
 
-Thank you for helping keep MCP-Agent-Graph and its users secure!
+Thank you for helping keep Agent-Graph and its users secure!

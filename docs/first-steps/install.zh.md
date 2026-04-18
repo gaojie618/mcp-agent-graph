@@ -17,8 +17,8 @@
 ### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/keta1930/mcp-agent-graph.git
-cd mcp-agent-graph
+git clone https://github.com/keta1930/agent-graph.git
+cd agent-graph
 ```
 
 ### 2. 配置 Docker 服务
@@ -26,7 +26,7 @@ cd mcp-agent-graph
 Docker 服务提供 MongoDB 数据库和 MinIO 对象存储。
 
 ```bash
-cd docker/mag_services
+cd docker/agent_graph_services
 cp .env.example .env
 ```
 
@@ -46,7 +46,7 @@ cp .env.example .env
 | ADMIN_USERNAME | 超级管理员用户名 | admin |
 | ADMIN_PASSWORD | 超级管理员密码 | securepassword |
 
-**生成 JWT 密钥：** 运行 `python mag/scripts/generate_jwt_secret.py` 生成安全的 JWT 密钥。
+**生成 JWT 密钥：** 运行 `python agent_graph/scripts/generate_jwt_secret.py` 生成安全的 JWT 密钥。
 
 ### 3. 启动 Docker 服务
 
@@ -70,7 +70,7 @@ cd ../..  # 返回项目根目录
 uv sync
 
 # 启动后端服务
-cd mag
+cd agent_graph
 uv run python main.py
 ```
 
@@ -81,7 +81,7 @@ cd ../..  # 返回项目根目录
 pip install -r requirements.txt
 
 # 启动后端服务
-cd mag
+cd agent_graph
 python main.py
 ```
 
@@ -128,7 +128,7 @@ nohup python main.py > app.log 2>&1 &
 | Docker 服务启动失败 | 检查端口是否被占用,验证 Docker 是否运行 |
 | 后端连接错误 | 验证 MongoDB 和 MinIO 是否运行,检查 `.env` 配置 |
 | 无法登录 | 验证 `.env` 文件中的管理员凭据与登录信息匹配 |
-| 端口 9999 已被占用 | 在 `mag/main.py` 中修改端口 (默认: 9999) |
+| 端口 9999 已被占用 | 在 `agent_graph/main.py` 中修改端口 (默认: 9999) |
 
 ## 开发者指南
 
