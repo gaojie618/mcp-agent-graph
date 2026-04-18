@@ -66,8 +66,8 @@ class MCPClientManager:
         full_command = [python_executable, client_script]
         logger.info(f"启动MCP Client，完整命令: {' '.join(full_command)}")
 
-        stdout_file = os.path.join(str(settings.MAG_DIR), "mcp_client_stdout.log")
-        stderr_file = os.path.join(str(settings.MAG_DIR), "mcp_client_stderr.log")
+        stdout_file = os.path.join(str(settings.AGENT_GRAPH_DIR), "mcp_client_stdout.log")
+        stderr_file = os.path.join(str(settings.AGENT_GRAPH_DIR), "mcp_client_stderr.log")
 
         try:
             with open(stdout_file, 'w') as stdout, open(stderr_file, 'w') as stderr:

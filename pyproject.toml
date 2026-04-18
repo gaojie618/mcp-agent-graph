@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "mcp-agent-graph"
+name = "agent-graph"
 version = "3.0.0"
-description = "MCP Agent Graph - Python SDK for Agent Development Framework"
+description = "Agent-Graph - Python SDK for Agent Development Framework"
 readme = "README.md"
 requires-python = ">=3.11"
 license = "Apache-2.0"
@@ -56,16 +56,16 @@ dependencies = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/keta1930/mcp-agent-graph#readme"
-Issues = "https://github.com/keta1930/mcp-agent-graph/issues"
-Source = "https://github.com/keta1930/mcp-agent-graph"
+Documentation = "https://github.com/keta1930/agent-graph#readme"
+Issues = "https://github.com/keta1930/agent-graph/issues"
+Source = "https://github.com/keta1930/agent-graph"
 
 [tool.hatch.build.targets.wheel]
-packages = ["mag"]
+packages = ["agent_graph"]
 
 [tool.hatch.build.targets.sdist]
 include = [
-    "mag",
+    "agent_graph",
     "README.md",
     "LICENSE",
 ]

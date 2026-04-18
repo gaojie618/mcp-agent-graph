@@ -21,7 +21,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger("mcp_client")
 
-app = FastAPI(title="MCP Client", description="MCP Client for MAG")
+app = FastAPI(title="MCP Client", description="MCP Client for Agent-Graph")
 
 # 全局状态
 SERVERS = {}
@@ -744,7 +744,7 @@ def run_client(host="127.0.0.1", port=8765):
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="MCP Client for MAG")
+    parser = argparse.ArgumentParser(description="MCP Client for Agent-Graph")
     parser.add_argument("--host", default="127.0.0.1", help="Host to bind")
     parser.add_argument("--port", type=int, default=8765, help="Port to bind")
 

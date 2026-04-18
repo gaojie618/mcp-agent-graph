@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 
 
 class GraphRunRepository:
-    """图运行管理器 - 负责mcp-agent-graph-messages集合的运行数据管理"""
+    """图运行管理器 - 负责 graph_run 集合的运行数据管理"""
 
     def __init__(self, db, graph_run_messages_collection, conversation_manager):
         """初始化图运行管理器"""
@@ -31,7 +31,7 @@ class GraphRunRepository:
             if not conversation_success:
                 return False
 
-            # 2. 在mcp-agent-graph-messages集合中创建运行数据文档
+            # 2. 在 graph_run 集合中创建运行数据文档
             now = datetime.now()
             run_doc = {
                 "_id": conversation_id,

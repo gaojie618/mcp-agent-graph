@@ -21,17 +21,17 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
 )
-logger = logging.getLogger("mag")
+logger = logging.getLogger("agent_graph")
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """应用生命周期管理"""
-    logger.info("Starting MAG application...")
+    logger.info("Starting Agent-Graph application...")
 
     try:
         # 1. 确保目录存在
-        logger.info(f"配置目录: {settings.MAG_DIR}")
+        logger.info(f"配置目录: {settings.AGENT_GRAPH_DIR}")
         settings.ensure_directories()
 
         # 2. 连接MongoDB
@@ -68,7 +68,7 @@ async def lifespan(app: FastAPI):
         traceback.print_exc()
         raise
     finally:
-        logger.info("Shutting down MAG application...")
+        logger.info("Shutting down Agent-Graph application...")
 
         try:
             # 清理MCP服务
@@ -87,7 +87,7 @@ async def lifespan(app: FastAPI):
 
 # 创建应用（使用lifespan）
 app = FastAPI(
-    title="MAG - MCP Agent Graph",
+    title="Agent-Graph",
     description="通过MCP+Graph构建Agent系统的工具",
     version="2.0.0",
     lifespan=lifespan,

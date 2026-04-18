@@ -26,7 +26,7 @@ if __name__ == "__main__":
     print("=" * 60)
     print("📝 使用方法:")
     print("1. 复制上面的密钥")
-    print("2. 在 docker/mag_services/.env 文件中设置:")
+    print("2. 在 docker/agent_graph_services/.env 文件中设置:")
     print(f"   JWT_SECRET_KEY={secret}")
     print("3. 启动服务")
     print("=" * 60)

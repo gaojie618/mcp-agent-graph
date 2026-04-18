@@ -3,7 +3,7 @@ import requests
 
 mcp = FastMCP(
     name="{sanitized_graph_name}_graph",
-    instructions="""This server provides access to the MAG graph '{graph_name}' in sequential execution mode. 
+    instructions="""This server provides access to the Agent-Graph graph '{graph_name}' in sequential execution mode.
     {description}
     Call execute_agents() to run the graph with sequential execution."""
 )
