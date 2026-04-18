@@ -1,7 +1,5 @@
 [English](README.md) | 中文
 
-> ⚠️ **项目状态**：本项目目前处于暂停更新状态，不会再更新新功能。在线体验服务已下线。
-
 Agent-Graph 是一个基于上下文工程（Context Engineering）理念构建的多智能体系统（Multi-Agent System）。集成了 Sub-agent、长期记忆、MCP、Agent-based Workflow 等功能。通过将上下文工程的最佳实践融入可视化的开发体验，Agent-Graph 让开发者能够快速构建、测试和部署复杂的多智能体应用。
 
 | | |
