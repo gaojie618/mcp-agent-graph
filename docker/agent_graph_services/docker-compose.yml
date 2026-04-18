@@ -14,7 +14,7 @@ services:
       - mongodb_data:/data/db
       - mongodb_config:/data/configdb
     networks:
-      - mag_network
+      - agent_graph_network
     command: ["--bind_ip_all"]
     healthcheck:
       test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
@@ -54,7 +54,7 @@ services:
     depends_on:
       - mongodb
     networks:
-      - mag_network
+      - agent_graph_network
     logging:
       driver: "json-file"
       options:
@@ -83,7 +83,7 @@ services:
     volumes:
       - minio_data:/data
     networks:
-      - mag_network
+      - agent_graph_network
     command: server /data --console-address ":9001"
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
@@ -118,7 +118,7 @@ services:
     volumes:
       - milvus_etcd:/etcd
     networks:
-      - mag_network
+      - agent_graph_network
     command: etcd -advertise-client-urls=http://milvus-etcd:2379 -listen-client-urls http://0.0.0.0:2379 --data-dir /etcd
     healthcheck:
       test: ["CMD", "etcdctl", "endpoint", "health"]
@@ -155,7 +155,7 @@ services:
     volumes:
       - milvus_data:/var/lib/milvus
     networks:
-      - mag_network
+      - agent_graph_network
     ports:
       - "127.0.0.1:${MILVUS_PORT}:19530"
       - "127.0.0.1:${MILVUS_METRICS_PORT}:9091"
@@ -191,7 +191,7 @@ services:
     ports:
       - "127.0.0.1:${ATTU_PORT}:3000"
     networks:
-      - mag_network
+      - agent_graph_network
     depends_on:
       - milvus-standalone
     logging:
@@ -209,7 +209,7 @@ services:
           memory: 256M
 
 networks:
-  mag_network:
+  agent_graph_network:
     driver: bridge
 
 volumes:
